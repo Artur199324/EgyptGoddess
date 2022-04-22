@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.FragmentButtEG">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgg">
+
+        <com.basel.DualButton.DualButton
+            android:id="@+id/startBtn"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="448dp"
+            app:backgroundColorFirst="#03A9F4"
+            app:backgroundColorSecond="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:textColorFirst="#ffffff"
+            app:textColorSecond="#03A9F4"
+            app:textFirst="START"
+            app:textSecond="You are ready? Yes!!"
+            tools:ignore="MissingConstraints" />
+
+        <com.basel.DualButton.DualButton
+            android:id="@+id/closeBtn"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="32dp"
+            app:backgroundColorFirst="#03A9F4"
+            app:backgroundColorSecond="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/startBtn"
+            app:textColorFirst="#ffffff"
+            app:textColorSecond="#03A9F4"
+            app:textFirst="Close"
+            app:textSecond="Are you sure? Yes!!"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navig"
+    app:startDestination="@id/fragmentStartEG">
+
+    <fragment
+        android:id="@+id/fragmentStartEG"
+        android:name="com.goddes.egypyte.fragments.FragmentStartEG"
+        android:label="fragment_start_e_g"
+        tools:layout="@layout/fragment_start_e_g" >
+        <action
+            android:id="@+id/action_fragmentStartEG_to_fragmentButtEG"
+            app:destination="@id/fragmentButtEG" />
+        <action
+            android:id="@+id/action_fragmentStartEG_to_fragmentInternetEG"
+            app:destination="@id/fragmentInternetEG" />
+        <action
+            android:id="@+id/action_fragmentStartEG_to_fragmentWebEG"
+            app:destination="@id/fragmentWebEG" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentButtEG"
+        android:name="com.goddes.egypyte.fragments.FragmentButtEG"
+        android:label="fragment_butt_e_g"
+        tools:layout="@layout/fragment_butt_e_g" >
+        <action
+            android:id="@+id/action_fragmentButtEG_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentInternetEG"
+        android:name="com.goddes.egypyte.fragments.FragmentInternetEG"
+        android:label="fragment_internet_e_g"
+        tools:layout="@layout/fragment_internet_e_g" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.goddes.egypyte.activity.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/fragmentWebEG"
+        android:name="com.goddes.egypyte.fragments.FragmentWebEG"
+        android:label="fragment_web_e_g"
+        tools:layout="@layout/fragment_web_e_g" />
+</navigation>
